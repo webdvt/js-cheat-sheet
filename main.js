@@ -79,6 +79,7 @@ const {firstName, lastName, address: {state}} = person;
 console.log(firstName, lastName, state);
 // Add property to object
 person.email = 'rickc137@citadel.gov'; 
+console.log(person);
 
 // For loops
 const todos = [
