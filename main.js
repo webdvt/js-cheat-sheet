@@ -26,7 +26,7 @@ console.log(nums.split(',')); // Splits string by delimiter
 
 // Arrays
 const integers = new Array(1, 2, 3, 4);
-console.log(nums);
+console.log(integers);
 const fruits = ['apples', 'oranges', 'bananas', 'mangoes'];
 console.log(fruits);
 console.log(`The length of fruits is ${fruits.length}`);
