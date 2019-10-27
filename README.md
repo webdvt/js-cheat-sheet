@@ -1,5 +1,9 @@
 # AWC Intro to JavaScript
 Here are the files we will be using during `Intro to JS` workshop with AWC on 10/29/2019.
+### If you don't have a text editor/IDE and Git already installed:
+1. [Link to install Git](https://git-scm.com/downloads)
+2. [Link to install Visual Studio Code](https://code.visualstudio.com/)
+
 #### Follow these steps:
 1. Fork this repository by clicking on the `Fork` button at top right corner:
 ![](img/screenshot.jpg)
