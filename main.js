@@ -14,13 +14,13 @@ console.log(typeof y);
 
 // String concatenation
 console.log("My name is " + name + " and I am " + age + " years old.");
-// String template
+// String Interpolation: lets you to inject variables & logic directly into a string
 console.log(`My name is ${name} and I am ${age} years old.`);
 
 // String operations and properties
-const s = "Hello World";
-console.log(`The length of s is ${s.length}`);
-console.log(s.substring(0, 5)); // From index 0 to index 4 (2nd paramater exclusinve)
+const str = "Hello World";
+console.log(`The length of s is ${str.length}`);
+console.log(str.substring(0, 5)); // From index 0 to index 4 (2nd parameter exclusive)
 let nums = "1,2,3,4,5";
 console.log(nums.split(',')); // Splits string by delimiter
 
@@ -30,8 +30,8 @@ console.log(integers);
 const fruits = ['apples', 'oranges', 'bananas', 'mangoes'];
 console.log(fruits);
 console.log(`The length of fruits is ${fruits.length}`);
-const mix = ['1', 2, true]; // Array with different data types
-console.log(mix);
+const mixArr = ['1', 2, true]; // Array with different data types
+console.log(mixArr);
 // Accessing elements in array
 console.log(fruits[1]); // index starts at 0
 // Add element to array if you know array size
@@ -45,7 +45,10 @@ console.log(fruits);
 fruits.unshift('strawberries');
 console.log(fruits);
 // Remove last element in array
-fruits.pop()
+fruits.pop();
+console.log(fruits);
+// Remove from beginning of array
+fruits.shift();
 console.log(fruits);
 // Remove element at specific index
 fruits.splice(0,0);
@@ -53,22 +56,19 @@ console.log(fruits);
 // Remove range of elements
 fruits.splice(1, 3);
 console.log(fruits);
-// Remove from beginning of array
-fruits.shift();
-console.log(fruits);
 
 // Object Literals
 let person = {
-    firstName: 'Rick',
-    lastName: 'Sanchez',
+    firstName: 'John',
+    lastName: 'Doe',
     age: 70,
-    hobbies: ['adventures with morty', 'drinking', 'science', 'inventing'],
+    hobbies: ['hiking', 'drinking', 'science', 'inventing'],
     address: {
         street: '123 main st',
-        city: 'Roswell',
-        state: 'New Mexico'
+        city: 'Blacksburg',
+        state: 'Virginia'
     }
-}
+};
 console.log(person);
 // Access single value
 console.log(person.firstName);
@@ -78,7 +78,7 @@ console.log(person.address.street);
 const {firstName, lastName, address: {state}} = person;
 console.log(firstName, lastName, state);
 // Add property to object
-person.email = 'rickc137@citadel.gov'; 
+person.email = 'johndoe@gmail.com';
 console.log(person);
 
 // For loops
@@ -86,17 +86,17 @@ const todos = [
     {
         id: 1,
         text: 'take out trash',
-        isCompleted: true
+        isComplete: true
     },
     {
         id: 2,
         text: 'finish hw',
-        isCompleted: false
+        isComplete: false
     },
     {
         id: 3,
-        text: 'meet with advisor',
-        isCompleted: false 
+        text: 'meet with adviser',
+        isComplete: false
     }
 ];
 // set iterator value, set bound, set increment value
@@ -134,23 +134,18 @@ while (counter < 10);
 // Conditionals
 counter = 0;
 if (counter === 0) {
-    console.log('counter is 0');
+    console.log('counter equals to 0');
 }
-else if (counter === 1) {
-    console.log('counter is 1');
+else if (counter < 0) {
+    console.log('counter is negative');
 }
 else {
-    console.log(counter === 0); 
+    console.log('counter is positive');
 }
 
 // Functions
 function isEven(x) {
-    if (x % 2 === 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return x % 2 === 0;
 }
 console.log(isEven(4));
 console.log(isEven(3));
@@ -161,6 +156,7 @@ const mean = (set) => {
         sum += set[i];
     }
     return sum / set.length;
-}
+};
+
 console.log(mean([1, 2, 3]));
 console.log(mean([3,5,3,2,3,4,5]));
