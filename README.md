@@ -1,5 +1,5 @@
 # Intro to JavaScript
-Here are the files we will be using during `Intro to JS` workshop with AWC on 2/23/2020.
+Here are the files we will be using during `Intro to JS` meeting on 2/23/2020.
 #### If you don't have a text editor/IDE and Git already installed:
 1. [Link to install Git](https://git-scm.com/downloads)
 2. [Link to install Visual Studio Code](https://code.visualstudio.com/)
