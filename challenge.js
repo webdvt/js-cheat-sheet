@@ -30,22 +30,22 @@ const temperaturesInF = [42, 53, 22, 60]; // input
 
 
 
-// #4 Given an object of people and their ages, return how old the
+// #4 Given an array of person object and their ages, return how old the
 // people would be after n (positive number) years have passed.
 /* E.g.
-afterNYears({
-    "Joel" : 32,
-    "Fred" : 44,
-    "Reginald" : 65,
-    "Susan" : 33,
-    "Julian" : 13
-  }, 1) ➞ {
-    "Joel" : 33,
-    "Fred" : 45,
-    "Reginald" : 66,
-    "Susan" : 34,
-    "Julian" : 14
-  }
+afterNYears([
+    { name: "Joel" : age: 32},
+    { name: "Fred" : age: 44},
+    { name: "Reginald" : age: 65},
+    { name: "Susan" : age: 33},
+    { name: "Julian" : age: 13},
+  ], 1) ➞ [
+    { name: "Joel" : age: 33},
+    { name: "Fred" : age: 45},
+    { name: "Reginald" : age: 66},
+    { name: "Susan" : age: 34},
+    { name: "Julian" : age: 14},
+  ]
 */
 
 
