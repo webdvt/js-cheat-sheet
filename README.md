@@ -11,5 +11,3 @@ Here are the files we will be using during `Intro to JS` meeting on 2/23/2020.
 `git clone https://github.com/<YOUR_GITHUB_USERNAME>/js-cheat-sheet.git` by opening **git bash**
 3. Go into your cloned directory with
 `cd js-cheat-sheet`
-4. Check out the `starter` branch with
-`git checkout starter`
