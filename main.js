@@ -190,9 +190,9 @@ console.log({tasks, tasks1, tasks2});
 // --- Double equal sign '==' vs triple equal sign '===' ---
 
 // '==' --> converts the type before running the comparison
-const x = '23' == 23;
-const y = '23' === 23;
-console.log({x, y});
+const a = '23' == 23;
+const b = '23' === 23;
+// console.log({x, y});
 
 
 // --- Functions ---
