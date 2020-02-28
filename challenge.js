@@ -5,6 +5,12 @@
 // #1 Create a function that takes in a person's name and
 // console logs a greeting message
 // E.g. input: 'John' --> output: 'Hello John'
+// Solution:
+const greet = (name) => {
+  return `Hello ${name}`;
+};
+
+// console.log('#1 greeting:', greet('John'));
 
 
 
@@ -19,7 +25,19 @@
 
         output: 'Hello, my name is John Doe and I am 25 years old.'
  */
+// Solution:
+const introduce = (person) => {
+  const {firstName, lastName, age} = person;
+  return `Hello, my name is ${firstName} ${lastName} and I am ${age} years old.`;
+};
 
+const personA = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+// console.log('#2 introduce:', introduce(personA));
 
 
 // #3 Create a function that takes in an array of temperatures in fahrenheit
@@ -27,6 +45,14 @@
 // Here is the conversion formula: T(°C) = (T(°F) - 32) × 5/9
 const temperaturesInF = [42, 53, 22, 60]; // input
 // output: [5.56, 11.67, -5.55, 15.66]
+// Solution:
+const convertToCelsius = (tempArr) => {
+  return tempArr.map(temp => ((temp - 32) * 5 / 9).toFixed(2));
+};
+
+const temperaturesInC = convertToCelsius(temperaturesInF);
+
+// console.log({temperaturesInC});
 
 
 
@@ -47,6 +73,24 @@ afterNYears([
     { name: "Julian" : age: 14},
   ]
 */
+// Solution:
+const afterNYears = (peopleArr, n) => {
+  return peopleArr.map(person => ({...person, age: person.age + n}))
+};
+
+const people = [
+  { name: "Joel", age: 32},
+  { name: "Fred", age: 44},
+  { name: "Reginald", age: 65},
+  { name: "Susan", age: 33},
+  { name: "Julian", age: 13},
+];
+
+const numberOfYears = 1;
+
+const peopleAfterNYears = afterNYears(people, numberOfYears);
+
+// console.log({people, numberOfYears, peopleAfterNYears});
 
 
 
@@ -57,6 +101,14 @@ afterNYears([
   toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots", 12]]
   toArray({}) ➞ []
  */
+// Solution:
+const obj1 = { a: 1, b: 2 };
+
+const toArray = (obj) => {
+  return Object.entries(obj);
+};
+
+// console.log(toArray({}));
 
 
 
