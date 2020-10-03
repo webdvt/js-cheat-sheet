@@ -1,13 +1,7 @@
 # Intro to JavaScript
-Here are the files we will be using during `Intro to JS` meeting on 2/23/2020.
-#### If you don't have a text editor/IDE and Git already installed:
-1. [Link to install Git](https://git-scm.com/downloads)
-2. [Link to install Visual Studio Code](https://code.visualstudio.com/)
+Here are the files we will be using during `Intro to JS` meeting on 9/27/2020.
 
-#### Follow these steps:
-1. Fork this repository by clicking on the `Fork` button at top right corner:
-![](img/screenshot.jpg)
-2. After you have forked the repository, clone (your version of the) repos with
-`git clone https://github.com/<YOUR_GITHUB_USERNAME>/js-cheat-sheet.git` by opening **git bash**
-3. Go into your cloned directory with
-`cd js-cheat-sheet`
+### How to download the files in this repos?
+**Option 1**: If you have Git installed, you can fork this repos and then clone it.
+
+**Option 2**: You can download this repository as a zip file by clicking on the green dropdown button that says "code", and then select "download ZIP".  
