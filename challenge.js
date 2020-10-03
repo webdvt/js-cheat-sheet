@@ -96,17 +96,3 @@ const numberOfYears = 1;
 const peopleAfterNYears = afterNYears(people, numberOfYears);
 
 // console.log({people, numberOfYears, peopleAfterNYears});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
